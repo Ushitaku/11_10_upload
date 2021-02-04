@@ -190,16 +190,18 @@ footer{
     color: #fff;
 }
 
-/* フローティングバナー */
+/* 購入はこちらバナー */
 .floating-banner {
   position: fixed;
   z-index: 99999;
   bottom: 40px;
   right: 40px;
 }
+
 .floating-banner:hover {
   opacity: .7;
 }
+
 .banner {
   padding: 20px;
   background: linear-gradient(86.13deg, #7080F7 -3.42%, #3E9ED9 59.59%); /* バナーの背景色 */
@@ -211,6 +213,33 @@ footer{
 a {
   text-decoration: none; /* リンクに下線が入らないように */
   color: white;
+}
+
+
+/* 問い合わせバナー設定 */
+.form-banner {
+  position: fixed;
+  z-index: 99999;
+  bottom: 400px;
+  right: 0px;
+}
+
+.form-banner:hover {
+  opacity: .7;
+}
+
+.banner2 {
+  padding: 10px 0px;
+  background: linear-gradient(86.13deg, #f88316 -3.42%, #fcc921 59.59%); /* バナーの背景色 */
+  color: #fff; /* バナー内の文字色 */
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.fm{
+    writing-mode: vertical-rl;
+
 }
 
 /* ヘッダー */

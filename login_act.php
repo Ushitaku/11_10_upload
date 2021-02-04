@@ -7,14 +7,17 @@ include('functions.php');
 $pdo = connect_to_db();
 $username = $_POST['username'];
 $password = $_POST['password'];
+$email = $_POST['email'];
 
 $sql = 'SELECT * FROM login_table
 WHERE username=:username
 AND password=:password
+AND email=:email
 AND is_deleted=0';
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+$stmt->bindValue(':email', $email, PDO::PARAM_STR);
 $status = $stmt->execute();
 
 // DBのデータ有無で条件分岐
@@ -28,6 +31,7 @@ if (!$val) { // 該当データがないときはログインページへのリ�
     $_SESSION["session_id"] = session_id();
     $_SESSION["is_admin"] = $val["is_admin"];
     $_SESSION["username"] = $val["username"];
+    $_SESSION["email"] = $val["email"];
     header("Location:login_index.php"); // 一覧ページへ移動
     exit();
 }

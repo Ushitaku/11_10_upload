@@ -9,6 +9,7 @@ include('functions.php');
 // データ受け取り
 $username = $_POST["username"];
 $password = $_POST["password"];
+$email = $_POST["email"];
 
 // DB接続関数
 $pdo = connect_to_db();
@@ -37,12 +38,14 @@ if ($stmt->fetchColumn() > 0) {
 
 // ユーザ登録SQL作成
 // `created_at`と`updated_at`には実行時の`sysdate()`関数を用いて実行時の日時を入力する
-$sql = 'INSERT INTO login_table(id, username, password, is_admin, is_deleted, created_at, updated_at) VALUES(NULL, :username, :password, 0, 0, sysdate(), sysdate())';
+$sql = 'INSERT INTO login_table(id, username, password, email, is_admin, is_deleted, created_at, updated_at) 
+        VALUES(NULL, :username, :password, :email, 0, 0, sysdate(), sysdate())';
 
 // SQL準備&実行
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+$stmt->bindValue(':email', $email, PDO::PARAM_STR);
 $status = $stmt->execute();
 
 // データ登録処理後

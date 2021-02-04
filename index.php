@@ -37,7 +37,6 @@
         <ul class="gnav">
             <li class="gnav_menu"><a href="register.php">新規会員登録</a></li>
             <li class="gnav_menu"><a href="login.php">ログイン</a></li>
-            <li class="gnav_menu"><a href="logout.php">ログアウト</a></li>
         </ul>
         <div class="main fadein">
             <h1 id="main_text" class="main_text">ずっと、健康的な私でいるために</h1>

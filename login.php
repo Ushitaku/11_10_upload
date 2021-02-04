@@ -19,6 +19,7 @@
 
         <input type="text" class="form-control" name="username" placeholder="username" required="" autofocus="" />
         <input type="text" class="form-control" name="password" placeholder="password" required="" autofocus="" />
+        <input type="text" class="form-control" name="email" placeholder="email" required="" autofocus="" />
 
         <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">ログイン</button>
       </form>

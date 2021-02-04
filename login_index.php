@@ -24,11 +24,17 @@ check_session_id();
             </div>
         </a>
     </div>
+    <div class="form-banner">
+        <a href="form.php">
+            <div class="banner2">
+                <p class="fm">お問合せはこちら</p>
+            </div>
+        </a>
+    </div>
 
     <div class="main_layout">
         <ul class="gnav">
-            <li class="gnav_menu"><a href="register.php">新規会員登録</a></li>
-            <li class="gnav_menu"><a href="login.php">ログイン</a></li>
+            <li class="gnav_menu"><a href="login.php">別アカウントでログイン</a></li>
             <li class="gnav_menu"><a href="logout.php">ログアウト</a></li>
         </ul>
         <div class="main fadein">

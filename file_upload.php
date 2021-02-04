@@ -55,8 +55,6 @@ if ($status == false) {
 } else {
   $alert = "<script type='text/javascript'>alert('応募完了しました！');</script>";
   echo $alert;
-  header("Location:login_index.php"); // 一覧ページへ移動
-  exit();
 }
 
 
@@ -74,6 +72,13 @@ if ($status == false) {
 <body>
   <!-- ここに画像を表示しよう -->
   <?= $img ?>
+  <script>
+    var alert = <?php echo json_encode($alert); ?>;
+    if (alert = true) {
+      location.href = 'login_index.php';
+    }
+  </script>
+
 </body>
 
 </html>
