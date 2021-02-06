@@ -259,6 +259,16 @@ a {
     opacity: 0.6;
 }
 
+.username{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    color: white;
+    text-decoration:underline 5px;
+    text-decoration-color:#7080F7;
+    text-shadow: 1px 2px 3px #808080;
+}
+
 .present{
     width: 100%;
     height: auto;

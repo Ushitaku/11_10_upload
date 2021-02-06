@@ -154,7 +154,7 @@ textarea:focus {
  
 textarea[name="content"] {
   display: inline-block;
-  width: 100%;
+  width: 98%;
   height: 150px;
 }
  
@@ -196,4 +196,30 @@ textarea::placeholder {
   position: relative;
   text-align: left;
   width: 300px;
+}
+
+.sending{
+  display: none;
+  text-align: center;
+  z-index: 9999;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 25%;
+  height: 5%;
+  background: linear-gradient(86.13deg, #7080F7 -3.42%, #3E9ED9 59.59%); /* バナーの背景色 */
+  color: #fff;
+}
+
+.sendafter{
+  display: none;
+  text-align: center;
+  z-index: 9999;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 25%;
+  height: 5%;
+  background: linear-gradient(86.13deg, #7080F7 -3.42%, #3E9ED9 59.59%); /* バナーの背景色 */
+  color: #fff;
 }

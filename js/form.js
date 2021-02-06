@@ -1,5 +1,5 @@
 $(function () {
-    $('#next').click(function () {
+    $('#button').click(function () {
 
         $.ajax({
             url: "form_ajax.php",

@@ -33,6 +33,9 @@ check_session_id();
     </div>
 
     <div class="main_layout">
+        <div class="username">
+            <h1><?= "ようこそ $_SESSION[username] さん" ?></h1>
+        </div>
         <ul class="gnav">
             <li class="gnav_menu"><a href="login.php">別アカウントでログイン</a></li>
             <li class="gnav_menu"><a href="logout.php">ログアウト</a></li>
